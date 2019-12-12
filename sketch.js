@@ -19,7 +19,7 @@ function setup() {
 
   var ball_Options = {
 
-    restitution:1.0
+    'restitution':1.0
 
   }
 
@@ -30,6 +30,8 @@ World.add(world,ball);
 
 function draw() {
   background(0);  
+
+  Engine.update(engine);
 
 rectMode(CENTER);
 rect(ground.position.x,ground.position.y,400,20);
